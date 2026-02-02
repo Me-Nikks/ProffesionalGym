@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --background: 220 20% 6%;
+  --foreground: 0 0% 98%;
+  --surface: 220 16% 12%;
+  --surface-strong: 220 20% 18%;
+  --accent: 38 92% 58%;
+  --accent-soft: 38 80% 65%;
+  --accent-glow: 41 95% 58%;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-background text-foreground font-body antialiased;
+}
+
+section {
+  scroll-margin-top: 96px;
+}
+
+.gradient-text {
+  background: linear-gradient(120deg, #ffd36e, #f9b449, #f7e8b6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.glass-panel {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.45));
+  backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+::selection {
+  background: rgba(255, 215, 130, 0.2);
+}
