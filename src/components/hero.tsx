@@ -19,13 +19,15 @@ export function Hero() {
           transition={{ duration: 0.8 }}
           className="space-y-8"
         >
-          <p className="text-xs uppercase tracking-[0.4em] text-white/60">Elite training club</p>
+          <p className="text-xs uppercase tracking-[0.4em] text-white/60">
+            Luxury gym & performance club
+          </p>
           <h1 className="text-4xl font-semibold uppercase leading-tight md:text-6xl">
-            <span className="gradient-text">Forge</span> your most powerful self.
+            <span className="gradient-text">Train</span> in a gym built for results.
           </h1>
           <p className="text-base text-white/70 md:text-lg">
-            {siteConfig.description} Experience cinematic training spaces, precision coaching, and
-            recovery rituals curated for high performers.
+            {siteConfig.description} Lift on premium strength machines, push intensity in our
+            conditioning zone, and recover with expert-led therapy rituals.
           </p>
           <div className="flex flex-wrap gap-4">
             <Button href="/memberships">Explore memberships</Button>
@@ -34,9 +36,9 @@ export function Hero() {
             </Button>
           </div>
           <div className="grid gap-4 pt-6 text-xs uppercase tracking-[0.3em] text-white/60 md:grid-cols-3">
-            <div className="glass-panel rounded-2xl p-4">Private coaching</div>
+            <div className="glass-panel rounded-2xl p-4">Strength floor</div>
+            <div className="glass-panel rounded-2xl p-4">Cardio arena</div>
             <div className="glass-panel rounded-2xl p-4">Recovery suites</div>
-            <div className="glass-panel rounded-2xl p-4">Performance labs</div>
           </div>
         </motion.div>
         <motion.div
@@ -49,7 +51,7 @@ export function Hero() {
           <div className="glass-panel relative overflow-hidden rounded-[40px] p-6">
             <Image
               src="/images/hero-silhouette.svg"
-              alt="Athlete silhouette"
+              alt="Athlete training with weights in a premium gym"
               width={560}
               height={720}
               className="h-auto w-full"
@@ -58,11 +60,11 @@ export function Hero() {
             <div className="mt-6 grid gap-4 md:grid-cols-2">
               <div>
                 <p className="text-xs uppercase tracking-[0.3em] text-accent">Open 24/7</p>
-                <p className="text-sm text-white/70">Private access suites & curated playlists.</p>
+                <p className="text-sm text-white/70">Train anytime with premium equipment access.</p>
               </div>
               <div>
-                <p className="text-xs uppercase tracking-[0.3em] text-accent">Downtown skyline</p>
-                <p className="text-sm text-white/70">Rooftop recovery lounge and steam ritual.</p>
+                <p className="text-xs uppercase tracking-[0.3em] text-accent">10+ training zones</p>
+                <p className="text-sm text-white/70">Free weights, machines, turf, and HIIT studios.</p>
               </div>
             </div>
           </div>

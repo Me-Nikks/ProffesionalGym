@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: 'Aurora Forge Athletics',
   description:
-    'A luxury performance club blending bespoke coaching, recovery science, and cinematic design.',
+    'A luxury gym focused on strength training, athletic conditioning, and recovery science.',
   url: process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000',
   ogImage: '/images/og-aurora.svg',
   contactEmail: process.env.CONTACT_RECEIVER_EMAIL || 'concierge@auroraforgegym.com',
@@ -17,7 +17,7 @@ export const siteConfig = {
     {
       title: 'Cinematic training floors',
       description:
-        'A curated environment of matte black equipment, halo lighting, and soundscapes tuned for focus.',
+        'A curated gym environment with premium machines, free weights, and soundscapes tuned for focus.',
     },
     {
       title: 'Precision performance labs',
