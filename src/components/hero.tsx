@@ -29,6 +29,7 @@ export function Hero() {
       <div className="absolute inset-0 -z-10">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(255,215,130,0.12),transparent_55%)]" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom,_rgba(255,215,130,0.08),transparent_45%)]" />
+        <div className="absolute inset-x-0 bottom-24 h-px bg-gradient-to-r from-transparent via-accent/35 to-transparent" />
       </div>
 
       <div className="pointer-events-none absolute -left-14 top-44 hidden h-40 w-40 rounded-full border border-white/10 bg-white/[0.02] md:block" />
@@ -51,14 +52,16 @@ export function Hero() {
           <h1 className="text-4xl font-semibold uppercase leading-tight md:text-6xl">
             <span className="gradient-text">Train</span> in a gym built for results.
           </h1>
+
           <p className="text-base text-white/70 md:text-lg">
             {siteConfig.description} Lift on premium strength machines, push intensity in our
             conditioning zone, and recover with expert-led therapy rituals.
           </p>
+
           <div className="flex flex-wrap gap-4">
             <Button href="/memberships">Explore memberships</Button>
             <Button href="/contact" variant="ghost">
-              Book a private tour
+              Book a gym tour
             </Button>
           </div>
           <div className="grid gap-4 pt-6 text-xs uppercase tracking-[0.3em] text-white/60 md:grid-cols-3">
@@ -67,6 +70,7 @@ export function Hero() {
             <div className="glass-panel rounded-2xl p-4">Recovery suites</div>
           </div>
         </motion.div>
+
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -86,6 +90,7 @@ export function Hero() {
               className="h-auto w-full"
               priority
             />
+
             <div className="mt-6 grid gap-4 md:grid-cols-2">
               <div>
                 <p className="text-xs uppercase tracking-[0.3em] text-accent">Open 24/7</p>
